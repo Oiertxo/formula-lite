@@ -1,0 +1,16 @@
+# Ignorar la carpeta node_modules
+node_modules/
+
+# Ignorar archivos de caché
+*.log
+*.log.*
+npm-debug.log*
+
+# Ignorar archivos de configuración locales (por ejemplo, para VS Code)
+.vscode/
+.env
+
+# Ignorar archivos de construcción (por ejemplo, para proyectos de compilación)
+/build/
+/dist/
+/out/

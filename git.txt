@@ -1,0 +1,13 @@
+# Verificar el estado de los archivos
+git status
+
+# Añadir archivos al área de preparación
+git add archivo1 archivo2 directorio1/
+
+git add .
+
+# Hacer un commit
+git commit -m "Mensaje descriptivo que explica los cambios realizados"
+
+# Hacer un push
+git push origin main
