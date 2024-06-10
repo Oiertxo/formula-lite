@@ -8,8 +8,11 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
-  "description": "",
   "dependencies": {
     "electron": "^30.1.0"
-  }
+  },
+  "devDependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "description": ""
 }

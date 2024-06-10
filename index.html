@@ -5,11 +5,21 @@
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
         <title>Hello World!</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
-        We are using Node.js <span id="node-version"></span>,
-        Chromium <span id="chrome-version"></span>,
-        and Electron <span id="electron-version"></span>.
+        <div class="mt-5 d-flex align-items-center flex-column" style="height: 100vh;">
+            <span class="mt-5 fs-1 fw-bold">Formula Lite</span>
+            <button id="simulateButton" class="mt-5">
+                <span class="fs-3">Simulate</span>
+            </button>
+            <button id="settingsButton" class="mt-5">
+                <span class="fs-3">Settings</span>
+            </button>
+            <button id="mapButton" class="mt-5">
+                <span class="fs-3">Map</span>
+            </button>
+        </div>
     </body>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </html>
