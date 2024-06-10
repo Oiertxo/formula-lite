@@ -4,23 +4,24 @@
         <meta charset="UTF-8">
         <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
         <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-        <title>Hello World!</title>
+        <title>Formula Lite</title>
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link href="styles/styles.css" rel="stylesheet"> <!-- Vincula el archivo CSS externo -->
     </head>
     <body>
-        <div class="mt-5 d-flex align-items-center flex-column" style="height: 100vh;">
+        <div id="mainDiv" class="mt-5 d-flex align-items-center flex-column">
             <span class="mt-5 fs-1 fw-bold">Formula Lite</span>
-            <button id="simulateButton" class="mt-5">
+            <a class="mt-5" href="views/simulate.html">
                 <span class="fs-3">Simulate</span>
-            </button>
-            <button id="settingsButton" class="mt-5">
+            </a>
+            <a class="mt-5" href="views/settings.html">
                 <span class="fs-3">Settings</span>
-            </button>
-            <button id="mapButton" class="mt-5">
+            </a>
+            <a class="mt-5" href="views/map.html">
                 <span class="fs-3">Map</span>
-            </button>
+            </a>
         </div>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="scriptps/navigation.js"></script>
+        <script src="scripts/navigation.js"></script>
     </body>
 </html>
