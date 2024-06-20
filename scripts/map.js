@@ -1,1 +1,0 @@
-tracks = ["Autodromo Nazionale di Monza", "Circuit de Barcelona", "Silverstone"]
