@@ -1,4 +1,3 @@
-
 // All the Node.js APIs are available in the preload process.
 // It has the same sandbox as a Chrome extension.
 window.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +16,7 @@ const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld(
     'ipcRenderer',
     {
-        send: (channel, data) => ipcRenderer.send(channel, data)
+        send: (channel, data) => ipcRenderer.send(channel, data),
+        invoke: (channel, ...args) => ipcRenderer.invoke(channel, ...args)
     }
 );
